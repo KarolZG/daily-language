@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# API token
+# Flask configuration
+!api/.flaskenv
+
+# Secrests
 api/.env
