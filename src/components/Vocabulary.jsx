@@ -6,7 +6,7 @@ function Vocabulary({ vocabulary = [] }) {
                 {vocabulary.map((item, index) => (
                     <li key={index} className="vocab-item">
                         <h3>{item.word} - <em>{item.translation}</em></h3>
-                        <p><strong>Variation</strong> {item.special}</p>
+                        <p><strong>Variation:</strong> {item.special}</p>
                         <p><em>Memorization cue:</em> {item.cue}</p>
                     </li>
                 ))}

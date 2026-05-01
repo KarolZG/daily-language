@@ -6,10 +6,10 @@ from google.genai import types
 
 # Defying the data structure for the query response
 class WordEntry(BaseModel):
-    word: str = Field("Word in English")
-    translation: str = Field("The translated word with its definite article if it's a noun.")
-    special: str = Field(description="Conjugation for verbs, or comparative/superlative for adjectives/adverbs.")
-    cue: str = Field(description="Short memorization trick (max 3 words).")
+    word: str = Field("Word with its definite article if it's a noun.")
+    translation: str = Field("English transalation of the word / expression")
+    special: str = Field(description="Conjugation for verbs, synonims for nouns, comparative/superlative for adjectives/adverbs")
+    cue: str = Field(description="Short memorization trick in English, like a funny reference, song lyrics, etc.")
     
 class VocabularyList(BaseModel):
     vocabulary: List[WordEntry]
