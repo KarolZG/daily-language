@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+
 import './App.css';
-import AskVocabulary from './components/AskVocabulary';
+
 import Vocabulary from './components/Vocabulary';
+import AskVocabulary from './components/AskVocabulary';
 import LearnVocabulary from './components/LearnVocabulary';
+import Section from './components/Section';
 
 function App() {
   const [vocabulary, setVocabulary] = useState([]);
@@ -13,7 +16,6 @@ function App() {
     fetch('/api/vocabulary')
     .then(res => res.json())
     .then(data => {
-      console.log("Data from API: ", data);
       if (data.vocabulary && data.vocabulary.length > 0)
       {
         setVocabulary(data.vocabulary);
@@ -48,8 +50,12 @@ function App() {
     <>
       {hasData ? (
         <>
-          <Vocabulary vocabulary={vocabulary} />
-          <LearnVocabulary vocabulary={vocabulary} />
+          <Section title="Daily Vocabulary List">
+            <Vocabulary vocabulary={vocabulary} />
+          </Section>
+          <Section title="Daily Vocabulary Practice">
+            <LearnVocabulary vocabulary={vocabulary} />
+          </Section>
         </>
       ) : (
         <AskVocabulary onSubmit={fetchVocabulary} />
