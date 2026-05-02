@@ -1,17 +1,19 @@
 from flask import Flask, jsonify, request
-from gemini import words
+from vocabulary import get_today_file, words
 
 app = Flask(__name__)
 
 # Generating the list of vocabulary
-@app.route("/api/vocabulary", methods=["POST"])
+@app.route("/api/vocabulary", methods=["GET", "POST"])
 def vocabulary():
-    if request.method == "POST":
+    if request.method == "GET":
+        data = get_today_file()
+        return jsonify(data if data else {"vocabulary": []})
+    
+    elif request.method == "POST":
         params = request.get_json()
         amount = int(params.get("amount", 10))
         language = params.get("language", "German")
         subject = params.get("subject", "school")
-        
-        # Return Pydantic object conversed to array of dict
-        response = words(amount, language, subject)
-        return jsonify(response.model_dump())
+        data = words(amount, language, subject)
+        return jsonify(data)
