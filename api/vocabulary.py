@@ -54,7 +54,7 @@ def words(amount, language, subject):
         try:
             response = client.models.generate_content(
                 model="gemini-3.1-flash-lite-preview",
-                contents=f"List {amount} words in {language} connected with thema {subject}.",
+                contents=f"List {amount} words in {language} connected with thema {subject}. If a word is a noun, include the definitive article for the word included word in a foreign language, ",
                 config= types.GenerateContentConfig(
                     response_mime_type="application/json",
                     response_schema=VocabularyList,

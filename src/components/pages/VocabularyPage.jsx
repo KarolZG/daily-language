@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import Section from '../Section';
+import Section from '../layout/Section';
 
 import Vocabulary from '../vocabulary/Vocabulary';
 import AskVocabulary from '../vocabulary/AskVocabulary';

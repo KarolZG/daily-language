@@ -1,66 +1,24 @@
-import { useEffect, useState } from 'react';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Vocabulary from './components/Vocabulary';
-import AskVocabulary from './components/AskVocabulary';
-import LearnVocabulary from './components/LearnVocabulary';
-import Section from './components/Section';
+import Layout from './components/layout/Layout';
+
+import VocabularyPage from './components/pages/VocabularyPage';
+import GrammarPage from './components/pages/GrammarPage';
+import WritingPage from './components/pages/WritingPage';
+
 
 function App() {
-  const [vocabulary, setVocabulary] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [hasData, setHasData] = useState(false);
-
-  useEffect(() => {
-    fetch('/api/vocabulary')
-    .then(res => res.json())
-    .then(data => {
-      if (data.vocabulary && data.vocabulary.length > 0)
-      {
-        setVocabulary(data.vocabulary);
-        setHasData(true);
-      }
-      setLoading(false);
-    });
-  }, []);
-
-  const fetchVocabulary = (params) => {
-    setLoading(true);
-    fetch('/api/vocabulary', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(params)
-      })
-      .then(res => res.json())
-      .then(data => {
-        setVocabulary(data.vocabulary);
-        setHasData(true);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error("Error fetching:", err);
-        setLoading(false);
-      });
-  }
-
-  if (loading) return <p>Loading ...</p>; 
-
   return (
-    <>
-      {hasData ? (
-        <>
-          <Section title="Daily Vocabulary List">
-            <Vocabulary vocabulary={vocabulary} />
-          </Section>
-          <Section title="Daily Vocabulary Practice">
-            <LearnVocabulary vocabulary={vocabulary} />
-          </Section>
-        </>
-      ) : (
-        <AskVocabulary onSubmit={fetchVocabulary} />
-      )}
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<VocabularyPage />} />
+          <Route path='/grammar' element={<GrammarPage />} />
+          <Route path='/writing' element={<WritingPage />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
