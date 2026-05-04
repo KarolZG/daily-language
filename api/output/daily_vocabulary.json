@@ -1,0 +1,304 @@
+{
+    "vocabulary": [
+        {
+            "word": "der Flirt",
+            "translation": "flirt",
+            "special": "die Flirts",
+            "cue": "Sounds like flirt, easy to remember."
+        },
+        {
+            "word": "die Verführung",
+            "translation": "seduction",
+            "special": "die Verführungen",
+            "cue": "Think of 'führ' as leading someone along."
+        },
+        {
+            "word": "der Kuss",
+            "translation": "kiss",
+            "special": "die Küsse",
+            "cue": "Sounds like the English kiss."
+        },
+        {
+            "word": "die Liebe",
+            "translation": "love",
+            "special": "die Lieben",
+            "cue": "Rhymes with 'Bebe' for your love."
+        },
+        {
+            "word": "der Blick",
+            "translation": "glance/look",
+            "special": "die Blicke",
+            "cue": "The first thing you do when you spot someone."
+        },
+        {
+            "word": "das Verlangen",
+            "translation": "desire",
+            "special": "-",
+            "cue": "A long-lasting 'ver' yearning."
+        },
+        {
+            "word": "die Leidenschaft",
+            "translation": "passion",
+            "special": "die Leidenschaften",
+            "cue": "Leiden (suffering) + Schaft (creation); suffering for love."
+        },
+        {
+            "word": "das Date",
+            "translation": "date",
+            "special": "die Dates",
+            "cue": "Same as English."
+        },
+        {
+            "word": "die Anziehungskraft",
+            "translation": "attraction",
+            "special": "-",
+            "cue": "An (on) + Ziehung (pulling) + Kraft (power); the pull of attraction."
+        },
+        {
+            "word": "die Zärtlichkeit",
+            "translation": "tenderness",
+            "special": "die Zärtlichkeiten",
+            "cue": "Zart (delicate) + Keit (suffix)."
+        },
+        {
+            "word": "das Kompliment",
+            "translation": "compliment",
+            "special": "die Komplimente",
+            "cue": "Sounds like the English word."
+        },
+        {
+            "word": "die Berührung",
+            "translation": "touch",
+            "special": "die Berührungen",
+            "cue": "Berühren means to touch."
+        },
+        {
+            "word": "das Vergnügen",
+            "translation": "pleasure",
+            "special": "die Vergnügen",
+            "cue": "Think of having 'fun' (Ver-gnügen)."
+        },
+        {
+            "word": "der Reiz",
+            "translation": "charm/appeal",
+            "special": "die Reize",
+            "cue": "Reizvoll means charming."
+        },
+        {
+            "word": "die Romantik",
+            "translation": "romance",
+            "special": "-",
+            "cue": "Sounds like romantic."
+        },
+        {
+            "word": "das Geheimnis",
+            "translation": "secret",
+            "special": "die Geheimnisse",
+            "cue": "A mystery shared between two."
+        },
+        {
+            "word": "die Sehnsucht",
+            "translation": "longing",
+            "special": "die Sehnsüchte",
+            "cue": "Sehn (sight) + Sucht (addiction); addicted to seeing someone."
+        },
+        {
+            "word": "die Erotik",
+            "translation": "erotica",
+            "special": "-",
+            "cue": "Root is Eros, the god of love."
+        },
+        {
+            "word": "das Herzklopfen",
+            "translation": "heartbeat/palpitation",
+            "special": "-",
+            "cue": "Herz (heart) + Klopfen (knocking)."
+        },
+        {
+            "word": "der Charme",
+            "translation": "charm",
+            "special": "-",
+            "cue": "Borrowed from French."
+        },
+        {
+            "word": "die Nähe",
+            "translation": "closeness",
+            "special": "-",
+            "cue": "Näher means closer."
+        },
+        {
+            "word": "die Verabredung",
+            "translation": "rendezvous/appointment",
+            "special": "die Verabredungen",
+            "cue": "A formal arrangement for a date."
+        },
+        {
+            "word": "das Lächeln",
+            "translation": "smile",
+            "special": "-",
+            "cue": "A warm gesture of seduction."
+        },
+        {
+            "word": "die Versuchung",
+            "translation": "temptation",
+            "special": "die Versuchungen",
+            "cue": "Closely related to Verführung."
+        },
+        {
+            "word": "der Liebhaber",
+            "translation": "lover (male)",
+            "special": "die Liebhaber",
+            "cue": "Someone who loves."
+        },
+        {
+            "word": "die Liebhaberin",
+            "translation": "lover (female)",
+            "special": "die Liebhaberinnen",
+            "cue": "Female version of lover."
+        },
+        {
+            "word": "das Versprechen",
+            "translation": "promise",
+            "special": "die Versprechen",
+            "cue": "What you whisper in the dark."
+        },
+        {
+            "word": "die Zuneigung",
+            "translation": "affection",
+            "special": "die Zuneigungen",
+            "cue": "Zu (towards) + Neigung (inclination)."
+        },
+        {
+            "word": "das Flüstern",
+            "translation": "whispering",
+            "special": "-",
+            "cue": "Sounds like the sound of whispering."
+        },
+        {
+            "word": "die Nacht",
+            "translation": "night",
+            "special": "die Nächte",
+            "cue": "When seduction happens."
+        },
+        {
+            "word": "die Geste",
+            "translation": "gesture",
+            "special": "die Gesten",
+            "cue": "Body language is key."
+        },
+        {
+            "word": "der Duft",
+            "translation": "scent/perfume",
+            "special": "die Düfte",
+            "cue": "Seduction starts with a good scent."
+        },
+        {
+            "word": "das Feuer",
+            "translation": "fire",
+            "special": "die Feuer",
+            "cue": "Sparks flying."
+        },
+        {
+            "word": "die Lust",
+            "translation": "lust/desire",
+            "special": "die Lüste",
+            "cue": "Pure craving."
+        },
+        {
+            "word": "die Stimmung",
+            "translation": "mood/atmosphere",
+            "special": "die Stimmungen",
+            "cue": "Setting the mood."
+        },
+        {
+            "word": "die Aufmerksamkeit",
+            "translation": "attention",
+            "special": "-",
+            "cue": "Giving someone your focus."
+        },
+        {
+            "word": "der Zufall",
+            "translation": "coincidence",
+            "special": "die Zufälle",
+            "cue": "A 'chance' meeting."
+        },
+        {
+            "word": "die Verlockung",
+            "translation": "allure",
+            "special": "die Verlockungen",
+            "cue": "Something that locks your gaze."
+        },
+        {
+            "word": "das Schmachten",
+            "translation": "yearning",
+            "special": "-",
+            "cue": "Starry-eyed longing."
+        },
+        {
+            "word": "die Aufregung",
+            "translation": "excitement",
+            "special": "-",
+            "cue": "Nervous anticipation."
+        },
+        {
+            "word": "die Faszination",
+            "translation": "fascination",
+            "special": "-",
+            "cue": "Total captivation."
+        },
+        {
+            "word": "der Augenblick",
+            "translation": "moment",
+            "special": "die Augenblicke",
+            "cue": "Augen (eyes) + Blick (glance); love at first sight."
+        },
+        {
+            "word": "das Abenteuer",
+            "translation": "adventure",
+            "special": "die Abenteuer",
+            "cue": "Love is an adventure."
+        },
+        {
+            "word": "die Anmache",
+            "translation": "pick-up line/chatting up",
+            "special": "-",
+            "cue": "Colloquial term for hitting on someone."
+        },
+        {
+            "word": "die Zweisamkeit",
+            "translation": "togetherness",
+            "special": "-",
+            "cue": "Zwei (two) + Samkeit (ness); being just us two."
+        },
+        {
+            "word": "das Knistern",
+            "translation": "crackling/spark",
+            "special": "-",
+            "cue": "The tension in the air."
+        },
+        {
+            "word": "die Verwirrung",
+            "translation": "confusion",
+            "special": "die Verwirrungen",
+            "cue": "Being confused by love."
+        },
+        {
+            "word": "das Vertrauen",
+            "translation": "trust",
+            "special": "-",
+            "cue": "The foundation of intimacy."
+        },
+        {
+            "word": "die Begegnung",
+            "translation": "encounter",
+            "special": "die Begegnungen",
+            "cue": "A chance meeting."
+        },
+        {
+            "word": "die Ekstase",
+            "translation": "ecstasy",
+            "special": "-",
+            "cue": "The height of passion."
+        }
+    ]
+}
