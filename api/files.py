@@ -13,9 +13,6 @@ SETTINGS_PATH = os.path.join(RESPONSE_DIR, SETTINGS_FILE)
 
 # Creating a file path
 def create_path(dir_name, file_name):
-    # Checking if the directory exists
-    if not os.path.exists(dir_name):
-        os.makedirs(dir_name)
     return os.path.join(dir_name, file_name)
 
 # Checking if today's file exists
@@ -37,11 +34,16 @@ def save_to_file(data, file_path):
 def update_settings(new_data):
     data = {}
     if os.path.exists(SETTINGS_PATH):
-        with open(SETTINGS_PATH, 'r') as settings:
-            data = json.load(settings)
+        try:
+            with open(SETTINGS_PATH, 'r') as settings:
+                data = json.load(settings)
+        except (json.JSONDecodeError, IOError, FileNotFoundError):
+            data = {}
+    
     data.update(new_data)
-    with open(SETTINGS_PATH, 'w') as settings:
-        json.dump(data, settings, indent=4)
+    
+    with open(SETTINGS_PATH, 'w', encoding='utf-8') as settings:
+        json.dump(data, settings, indent=4, ensure_ascii=False)
         
 def get_settings():
     if os.path.exists(SETTINGS_PATH):

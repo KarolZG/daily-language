@@ -40,9 +40,17 @@ class VocabularyList(BaseModel):
     vocabulary: List[WordEntry]
     
 # Structure of grammar topic query response
+class GrammarExample(BaseModel):
+    example: str = Field(description="Example illustrating the grammar topic.")
+    
 class GrammarTopic(BaseModel):
-    subject: str = Field(description="Grammar topic title")
-    explaination: str = Field(description="Explaination of the grammar topic of the provided language supported by 3 examples")
+    title: str = Field(description="Grammar topic title")
+    explanation: str = Field(description="Explaination of the grammar topic of the provided language. At least 3 paragraphs.")
+    examples: List[GrammarExample] = Field(
+        min_items=3,
+        max_items=5,
+        description="A list of 3 to 5 examples illustrating the grammar topic."
+    )
 
 # Structure of writing instruction and feedback
 class WritingInstruction(BaseModel):
@@ -52,7 +60,7 @@ def gemini_request(content, schema, file_path):
     # Checking if the daily file exists
     catched_data = get_today_file(file_path)
     if catched_data:
-        return catched_data
+        return catched_data, True
     
     # If not, making the gemini api call
     client = genai.Client()
@@ -68,7 +76,7 @@ def gemini_request(content, schema, file_path):
             )
             data = response.parsed.model_dump()
             save_to_file(data, file_path)
-            return data
+            return data, False
         except Exception as ex:
             if i < MAX_RETRIES - 1:
                 time.sleep(2) 
@@ -93,19 +101,19 @@ def append_to_grammar_history(topic):
     history = load_history()
     if topic not in history:
         history.append(topic)
-        with open(PREVIOUS_GRAMMAR_PATH, 'w') as topics:
-            json.dump(history, topics, indent=4)
+        with open(PREVIOUS_GRAMMAR_PATH, 'w', encoding='utf-8') as topics:
+            json.dump(history, topics, indent=4, ensure_ascii=False)
 
 # Request a daily grammar topic
 def grammar_topic(language):
     history = load_history()
-    grammar_content = f"Explain a {language} grammar topic (not in {history}). Ilustrate it with 3 examples.)"
+    grammar_content = f"Explain a {language} grammar topic (not in {history})."
     
-    data = gemini_request(grammar_content, GrammarTopic, GRAMMAR_FILE_PATH)
+    data, is_cached = gemini_request(grammar_content, GrammarTopic, GRAMMAR_FILE_PATH)
     
-    if data:
-        update_settings({"grammar_topic_title": data["subject"]})
-        append_to_grammar_history(data["subject"])
+    if not is_cached and data:
+        update_settings({"grammar_topic": data["title"]})
+        append_to_grammar_history(data["title"])
     return data
 
 # Request a daily writing exercise

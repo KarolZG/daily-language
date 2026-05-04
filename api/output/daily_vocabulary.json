@@ -1,304 +1,304 @@
 {
     "vocabulary": [
         {
-            "word": "der Flirt",
-            "translation": "flirt",
-            "special": "die Flirts",
-            "cue": "Sounds like flirt, easy to remember."
+            "word": "die Schönheit",
+            "translation": "beauty",
+            "special": "Schönheiten",
+            "cue": "Schönheit sounds like shine; beauty shines."
         },
         {
-            "word": "die Verführung",
-            "translation": "seduction",
-            "special": "die Verführungen",
-            "cue": "Think of 'führ' as leading someone along."
+            "word": "das Gesicht",
+            "translation": "face",
+            "special": "Gesichter",
+            "cue": "Think of a 'ge-sight' for seeing."
         },
         {
-            "word": "der Kuss",
-            "translation": "kiss",
-            "special": "die Küsse",
-            "cue": "Sounds like the English kiss."
+            "word": "die Haut",
+            "translation": "skin",
+            "special": "Häute",
+            "cue": "Haut rhymes with shout; keep your skin in check."
         },
         {
-            "word": "die Liebe",
-            "translation": "love",
-            "special": "die Lieben",
-            "cue": "Rhymes with 'Bebe' for your love."
+            "word": "das Haar",
+            "translation": "hair",
+            "special": "Haare",
+            "cue": "Like 'hair' but with an extra 'a'."
         },
         {
-            "word": "der Blick",
-            "translation": "glance/look",
-            "special": "die Blicke",
-            "cue": "The first thing you do when you spot someone."
+            "word": "das Auge",
+            "translation": "eye",
+            "special": "Augen",
+            "cue": "Augen look like an 'O' and an 'en'."
         },
         {
-            "word": "das Verlangen",
-            "translation": "desire",
-            "special": "-",
-            "cue": "A long-lasting 'ver' yearning."
+            "word": "die Lippe",
+            "translation": "lip",
+            "special": "Lippen",
+            "cue": "Lippen is very close to lips."
         },
         {
-            "word": "die Leidenschaft",
-            "translation": "passion",
-            "special": "die Leidenschaften",
-            "cue": "Leiden (suffering) + Schaft (creation); suffering for love."
+            "word": "der Mund",
+            "translation": "mouth",
+            "special": "Münder",
+            "cue": "Mund sounds like 'moan'."
         },
         {
-            "word": "das Date",
-            "translation": "date",
-            "special": "die Dates",
-            "cue": "Same as English."
+            "word": "die Nase",
+            "translation": "nose",
+            "special": "Nasen",
+            "cue": "Nase is basically nose."
         },
         {
-            "word": "die Anziehungskraft",
-            "translation": "attraction",
-            "special": "-",
-            "cue": "An (on) + Ziehung (pulling) + Kraft (power); the pull of attraction."
+            "word": "die Wange",
+            "translation": "cheek",
+            "special": "Wangen",
+            "cue": "Wangen sounds like 'wing' of the face."
         },
         {
-            "word": "die Zärtlichkeit",
-            "translation": "tenderness",
-            "special": "die Zärtlichkeiten",
-            "cue": "Zart (delicate) + Keit (suffix)."
+            "word": "die Augenbraue",
+            "translation": "eyebrow",
+            "special": "Augenbrauen",
+            "cue": "Augen-brauen: eyes-brows."
         },
         {
-            "word": "das Kompliment",
-            "translation": "compliment",
-            "special": "die Komplimente",
-            "cue": "Sounds like the English word."
+            "word": "die Wimper",
+            "translation": "eyelash",
+            "special": "Wimpern",
+            "cue": "Wimpern sounds like 'wimp', lashes are delicate."
         },
         {
-            "word": "die Berührung",
-            "translation": "touch",
-            "special": "die Berührungen",
-            "cue": "Berühren means to touch."
+            "word": "die Stirn",
+            "translation": "forehead",
+            "special": "Stirnen",
+            "cue": "Stirn sounds like 'stern', a stern look uses the forehead."
         },
         {
-            "word": "das Vergnügen",
-            "translation": "pleasure",
-            "special": "die Vergnügen",
-            "cue": "Think of having 'fun' (Ver-gnügen)."
+            "word": "das Kinn",
+            "translation": "chin",
+            "special": "Kinnen",
+            "cue": "Kinn sounds like chin."
         },
         {
-            "word": "der Reiz",
-            "translation": "charm/appeal",
-            "special": "die Reize",
-            "cue": "Reizvoll means charming."
+            "word": "das Ohr",
+            "translation": "ear",
+            "special": "Ohren",
+            "cue": "Ohr looks like an ear."
         },
         {
-            "word": "die Romantik",
-            "translation": "romance",
-            "special": "-",
-            "cue": "Sounds like romantic."
+            "word": "der Hals",
+            "translation": "neck",
+            "special": "Hälse",
+            "cue": "Hals sounds like 'halt', stop at the neck."
         },
         {
-            "word": "das Geheimnis",
-            "translation": "secret",
-            "special": "die Geheimnisse",
-            "cue": "A mystery shared between two."
-        },
-        {
-            "word": "die Sehnsucht",
-            "translation": "longing",
-            "special": "die Sehnsüchte",
-            "cue": "Sehn (sight) + Sucht (addiction); addicted to seeing someone."
-        },
-        {
-            "word": "die Erotik",
-            "translation": "erotica",
-            "special": "-",
-            "cue": "Root is Eros, the god of love."
-        },
-        {
-            "word": "das Herzklopfen",
-            "translation": "heartbeat/palpitation",
-            "special": "-",
-            "cue": "Herz (heart) + Klopfen (knocking)."
-        },
-        {
-            "word": "der Charme",
-            "translation": "charm",
-            "special": "-",
-            "cue": "Borrowed from French."
-        },
-        {
-            "word": "die Nähe",
-            "translation": "closeness",
-            "special": "-",
-            "cue": "Näher means closer."
-        },
-        {
-            "word": "die Verabredung",
-            "translation": "rendezvous/appointment",
-            "special": "die Verabredungen",
-            "cue": "A formal arrangement for a date."
+            "word": "der Fingernagel",
+            "translation": "fingernail",
+            "special": "Fingernägel",
+            "cue": "Finger-nagel: finger-nail."
         },
         {
             "word": "das Lächeln",
             "translation": "smile",
-            "special": "-",
-            "cue": "A warm gesture of seduction."
+            "special": "Lächeln",
+            "cue": "Lächeln is a happy sound."
         },
         {
-            "word": "die Versuchung",
-            "translation": "temptation",
-            "special": "die Versuchungen",
-            "cue": "Closely related to Verführung."
+            "word": "die Locke",
+            "translation": "curl",
+            "special": "Locken",
+            "cue": "Locken: 'lock' those curls in."
         },
         {
-            "word": "der Liebhaber",
-            "translation": "lover (male)",
-            "special": "die Liebhaber",
-            "cue": "Someone who loves."
+            "word": "der Zopf",
+            "translation": "braid",
+            "special": "Zöpfe",
+            "cue": "Zopf sounds like a braid pattern."
         },
         {
-            "word": "die Liebhaberin",
-            "translation": "lover (female)",
-            "special": "die Liebhaberinnen",
-            "cue": "Female version of lover."
+            "word": "die Kosmetik",
+            "translation": "cosmetics",
+            "special": "Kosmetiken",
+            "cue": "Sounds exactly like cosmetics."
         },
         {
-            "word": "das Versprechen",
-            "translation": "promise",
-            "special": "die Versprechen",
-            "cue": "What you whisper in the dark."
+            "word": "das Make-up",
+            "translation": "make-up",
+            "special": "Make-ups",
+            "cue": "Direct loanword."
         },
         {
-            "word": "die Zuneigung",
-            "translation": "affection",
-            "special": "die Zuneigungen",
-            "cue": "Zu (towards) + Neigung (inclination)."
+            "word": "der Lippenstift",
+            "translation": "lipstick",
+            "special": "Lippenstifte",
+            "cue": "Lippen-stift: lip-stick."
         },
         {
-            "word": "das Flüstern",
-            "translation": "whispering",
-            "special": "-",
-            "cue": "Sounds like the sound of whispering."
+            "word": "die Mascara",
+            "translation": "mascara",
+            "special": "Mascaras",
+            "cue": "Direct loanword."
         },
         {
-            "word": "die Nacht",
-            "translation": "night",
-            "special": "die Nächte",
-            "cue": "When seduction happens."
+            "word": "der Lidschatten",
+            "translation": "eyeshadow",
+            "special": "Lidschatten",
+            "cue": "Lid-schatten: lid-shadow."
         },
         {
-            "word": "die Geste",
-            "translation": "gesture",
-            "special": "die Gesten",
-            "cue": "Body language is key."
+            "word": "das Puder",
+            "translation": "powder",
+            "special": "Puder",
+            "cue": "Sounds like powder."
         },
         {
-            "word": "der Duft",
-            "translation": "scent/perfume",
-            "special": "die Düfte",
-            "cue": "Seduction starts with a good scent."
+            "word": "das Parfüm",
+            "translation": "perfume",
+            "special": "Parfüms",
+            "cue": "Sounds like perfume."
         },
         {
-            "word": "das Feuer",
-            "translation": "fire",
-            "special": "die Feuer",
-            "cue": "Sparks flying."
+            "word": "die Creme",
+            "translation": "cream",
+            "special": "Cremes",
+            "cue": "Sounds like cream."
         },
         {
-            "word": "die Lust",
-            "translation": "lust/desire",
-            "special": "die Lüste",
-            "cue": "Pure craving."
+            "word": "die Seife",
+            "translation": "soap",
+            "special": "Seifen",
+            "cue": "Seife sounds like 'safe' soap."
         },
         {
-            "word": "die Stimmung",
-            "translation": "mood/atmosphere",
-            "special": "die Stimmungen",
-            "cue": "Setting the mood."
+            "word": "das Shampoo",
+            "translation": "shampoo",
+            "special": "Shampoos",
+            "cue": "Direct loanword."
         },
         {
-            "word": "die Aufmerksamkeit",
-            "translation": "attention",
-            "special": "-",
-            "cue": "Giving someone your focus."
+            "word": "der Kamm",
+            "translation": "comb",
+            "special": "Kämme",
+            "cue": "Kamm sounds like calm, keep your hair calm."
         },
         {
-            "word": "der Zufall",
-            "translation": "coincidence",
-            "special": "die Zufälle",
-            "cue": "A 'chance' meeting."
+            "word": "die Bürste",
+            "translation": "brush",
+            "special": "Bürsten",
+            "cue": "Sounds like bristle."
         },
         {
-            "word": "die Verlockung",
-            "translation": "allure",
-            "special": "die Verlockungen",
-            "cue": "Something that locks your gaze."
+            "word": "der Spiegel",
+            "translation": "mirror",
+            "special": "Spiegel",
+            "cue": "Mirror mirror on the wall, 'Spieglein' on the wall."
         },
         {
-            "word": "das Schmachten",
-            "translation": "yearning",
-            "special": "-",
-            "cue": "Starry-eyed longing."
+            "word": "schön",
+            "translation": "beautiful",
+            "special": "schöner, am schönsten",
+            "cue": "Rhymes with 'bone' but with an 'sh' start."
         },
         {
-            "word": "die Aufregung",
-            "translation": "excitement",
-            "special": "-",
-            "cue": "Nervous anticipation."
+            "word": "hübsch",
+            "translation": "pretty",
+            "special": "hübscher, am hübschesten",
+            "cue": "Hübsch sounds like 'hoop', pretty hoop."
         },
         {
-            "word": "die Faszination",
-            "translation": "fascination",
-            "special": "-",
-            "cue": "Total captivation."
+            "word": "elegant",
+            "translation": "elegant",
+            "special": "eleganter, am elegantesten",
+            "cue": "Same as English."
         },
         {
-            "word": "der Augenblick",
-            "translation": "moment",
-            "special": "die Augenblicke",
-            "cue": "Augen (eyes) + Blick (glance); love at first sight."
+            "word": "glänzend",
+            "translation": "shiny",
+            "special": "glänzender, am glänzendsten",
+            "cue": "Glanz is glow."
         },
         {
-            "word": "das Abenteuer",
-            "translation": "adventure",
-            "special": "die Abenteuer",
-            "cue": "Love is an adventure."
+            "word": "weich",
+            "translation": "soft",
+            "special": "weicher, am weichsten",
+            "cue": "Sounds like 'why'."
         },
         {
-            "word": "die Anmache",
-            "translation": "pick-up line/chatting up",
-            "special": "-",
-            "cue": "Colloquial term for hitting on someone."
+            "word": "gesund",
+            "translation": "healthy",
+            "special": "gesünder, am gesündesten",
+            "cue": "Gesund is 'go sound'."
         },
         {
-            "word": "die Zweisamkeit",
-            "translation": "togetherness",
-            "special": "-",
-            "cue": "Zwei (two) + Samkeit (ness); being just us two."
+            "word": "strahlend",
+            "translation": "radiant",
+            "special": "strahlender, am strahlendsten",
+            "cue": "Strahl is a ray of light."
         },
         {
-            "word": "das Knistern",
-            "translation": "crackling/spark",
-            "special": "-",
-            "cue": "The tension in the air."
+            "word": "gepflegt",
+            "translation": "well-groomed",
+            "special": "gepflegter, am gepflegtesten",
+            "cue": "Pflege is care."
         },
         {
-            "word": "die Verwirrung",
-            "translation": "confusion",
-            "special": "die Verwirrungen",
-            "cue": "Being confused by love."
+            "word": "jung",
+            "translation": "young",
+            "special": "jünger, am jüngsten",
+            "cue": "Sounds like 'young'."
         },
         {
-            "word": "das Vertrauen",
-            "translation": "trust",
-            "special": "-",
-            "cue": "The foundation of intimacy."
+            "word": "frisch",
+            "translation": "fresh",
+            "special": "frischer, am frischesten",
+            "cue": "Sounds like fresh."
         },
         {
-            "word": "die Begegnung",
-            "translation": "encounter",
-            "special": "die Begegnungen",
-            "cue": "A chance meeting."
+            "word": "die Maniküre",
+            "translation": "manicure",
+            "special": "Maniküren",
+            "cue": "Same as English."
         },
         {
-            "word": "die Ekstase",
-            "translation": "ecstasy",
-            "special": "-",
-            "cue": "The height of passion."
+            "word": "die Pediküre",
+            "translation": "pedicure",
+            "special": "Pediküren",
+            "cue": "Same as English."
+        },
+        {
+            "word": "die Gesichtsmaske",
+            "translation": "face mask",
+            "special": "Gesichtsmasken",
+            "cue": "Gesicht-maske: face-mask."
+        },
+        {
+            "word": "der Nagellack",
+            "translation": "nail polish",
+            "special": "Nagellacke",
+            "cue": "Nagel-lack: nail-lacquer."
+        },
+        {
+            "word": "das Deo",
+            "translation": "deodorant",
+            "special": "Deos",
+            "cue": "Short for deodorant."
+        },
+        {
+            "word": "die Foundation",
+            "translation": "foundation",
+            "special": "Foundations",
+            "cue": "Loanword from English."
+        },
+        {
+            "word": "der Concealer",
+            "translation": "concealer",
+            "special": "Concealer",
+            "cue": "Loanword from English."
+        },
+        {
+            "word": "das Rouge",
+            "translation": "blush",
+            "special": "Rouges",
+            "cue": "Borrowed from French."
         }
     ]
 }

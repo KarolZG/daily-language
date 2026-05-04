@@ -1,0 +1,18 @@
+{
+    "title": "The German Modal Verbs",
+    "explanation": "German modal verbs are a specific group of auxiliary verbs that modify the meaning of the main verb in a sentence. They express necessity, possibility, ability, or permission rather than a direct action. The most common modal verbs are können, müssen, dürfen, sollen, wollen, and mögen. They are essential for constructing complex sentences and expressing nuances in German communication.\n\nGrammatically, modal verbs follow specific conjugation rules in the present tense. Most importantly, the first and third person singular forms are identical and do not take the usual '-e' or '-t' endings. Furthermore, these verbs often cause a stem vowel change in the singular forms compared to the infinitive. Once a modal verb is placed in the second position of a main clause, the main verb is shifted to the very end of the sentence in its infinitive form, creating what is known as a bracket structure.\n\nBecause modal verbs already carry a strong semantic meaning, they can occasionally stand alone in a sentence when the context makes the main verb clear, such as in conversational replies. However, in standard construction, they always work in tandem with an infinitive. Mastering these verbs is a significant milestone for learners, as they allow for far more expressive and sophisticated sentence structures, enabling the speaker to convey intent and obligation clearly.",
+    "examples": [
+        {
+            "example": "Ich kann heute leider nicht kommen."
+        },
+        {
+            "example": "Du musst deine Hausaufgaben bis morgen erledigen."
+        },
+        {
+            "example": "Darf ich dich kurz etwas fragen?"
+        },
+        {
+            "example": "Wir wollen am Wochenende nach Berlin fahren."
+        }
+    ]
+}
