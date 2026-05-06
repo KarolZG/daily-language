@@ -9,9 +9,9 @@ from google.genai import types
 from pydantic import BaseModel, Field
 from typing import List
 
-from files import create_path, get_today_file, save_to_file, update_settings, RESPONSE_DIR
+from files import create_path, get_today_file, save_to_file, update_file, RESPONSE_DIR, SETTINGS_PATH
 
-# Setting the file paths to save the daily vocabulary, grammar and writing
+# Set the file paths to save the daily vocabulary, grammar and writing
 VOCABULARY_FILE = "daily_vocabulary.json"
 VOCABULARY_FILE_PATH = create_path(RESPONSE_DIR, VOCABULARY_FILE)
 
@@ -29,11 +29,13 @@ PREVIOUS_GRAMMAR_PATH = create_path(RESPONSE_DIR, PREVIOUS_GRAMMAR_FILE)
 MAX_RETRIES = 3
 
 # Gemini API Call logic
-# Defining the data structure for the words query response
+# Define the data structure for the words query response
 class WordEntry(BaseModel):
-    word: str = Field(description="A definitive article and the word in a foreign language with language specific writing. e.g. umlaut characters for German.")
+    word: str = Field(description="""A definitive article and the word in a foreign language
+                      with language specific writing. e.g. umlaut characters for German.""")
     translation: str = Field(description="English transalation of the word/expression")
-    special: str = Field(description="Conjugation for verbs, plural for nouns, comparative/superlative for adjectives/adverbs. Only words specific information, no descripiton like plural or conjugation.")
+    special: str = Field(description="""Conjugation for verbs, plural for nouns, comparative/superlative
+                         for adjectives/adverbs. Only words specific information, no descripiton like plural or conjugation.""")
     cue: str = Field(description="Short memorization trick in English, like a funny reference, song lyrics, etc.")
     
 class VocabularyList(BaseModel):
@@ -54,15 +56,26 @@ class GrammarTopic(BaseModel):
 
 # Structure of writing instruction and feedback
 class WritingInstruction(BaseModel):
-    instruction: str = Field("Writing exercise instruction")
+    instruction: str = Field(description="Writing exercise instruction in English")
     
-def gemini_request(content, schema, file_path):
-    # Checking if the daily file exists
-    catched_data = get_today_file(file_path)
-    if catched_data:
-        return catched_data, True
+class WritingFeedback(BaseModel):
+    mistakes: str = Field(description="Mistakes made")
+    corrected_version: str = Field(description="Improved version of user writing suggested by Gemini. Corrections needs to be bold and italized.")
+    feedback: str = Field(description="""Mistakes and proper structure explanation provided in English.
+                          Tips for the future and encouragement to keep up with learning.""")
+
+# Make an API call to Google Gemini
+# Universal function used across the project for all functionalities
+# Force fresh and update parameter has been added while implementing writing feedback requirement
+def gemini_request(content, schema, file_path, force_fresh=False, update_mode=False):
+    # Check if the daily file exists
+    # The second parameter is specific to updating the file that needs persist
+    # across the whole application lifecycle - previous_grammar_topics
+    if not force_fresh:
+        catched_data = get_today_file(file_path)
+        if catched_data: return catched_data, True
     
-    # If not, making the gemini api call
+    # If not, make the gemini api call
     client = genai.Client()
     for i in range(MAX_RETRIES):
         try:
@@ -75,7 +88,10 @@ def gemini_request(content, schema, file_path):
                 ),
             )
             data = response.parsed.model_dump()
-            save_to_file(data, file_path)
+            if update_mode:
+                update_file(data, file_path)
+            else:
+                save_to_file(data, file_path)
             return data, False
         except Exception as ex:
             if i < MAX_RETRIES - 1:
@@ -84,7 +100,7 @@ def gemini_request(content, schema, file_path):
             else:
                 raise ex
 
-# Prompting Gemini for the list of word dictionaries with specificed key value pairs 
+# Prompt Gemini for the list of word dictionaries with specificed key value pairs 
 def words(amount, language, subject):
     words_content = f"List {amount} words in {language} connected with thema {subject}."
     return gemini_request(words_content, VocabularyList, VOCABULARY_FILE_PATH)
@@ -111,13 +127,24 @@ def grammar_topic(language):
     
     data, is_cached = gemini_request(grammar_content, GrammarTopic, GRAMMAR_FILE_PATH)
     
+    # Updating the daily grammar topic and the previous grammar topics list 
     if not is_cached and data:
-        update_settings({"grammar_topic": data["title"]})
+        update_file({"grammar_topic": data["title"]}, SETTINGS_PATH)
         append_to_grammar_history(data["title"])
-    return data
+    return data, is_cached
 
 # Request a daily writing exercise
-def writing_exercise(language, vocabulary_subject, grammar_subject):
+def writing_instruction(language, vocabulary_subject, grammar_subject):
     writing_content = f"""Instruction for short writing exercise in {language} concentrating
                     on {vocabulary_subject} including the usage of {grammar_subject}"""
+                    
     return gemini_request(writing_content, WritingInstruction, WRITING_FILE_PATH)
+
+# Generate user writing feedback
+def writing_feedback(instruction, user_writing):
+    feedback_content = f"""User was given the following task {instruction}.
+                    Here's the answer he submitted: {user_writing}
+                    Generate feedback using the provided structure."""
+                    
+    return gemini_request(feedback_content, WritingFeedback, WRITING_FILE_PATH, force_fresh=True, update_mode=True)
+                    

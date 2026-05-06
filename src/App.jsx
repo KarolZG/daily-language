@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -9,13 +10,18 @@ import WritingPage from './components/pages/WritingPage';
 
 
 function App() {
+  const [writing, setWriting] = useState("");
+
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
           <Route path='/' element={<VocabularyPage />} />
           <Route path='/grammar' element={<GrammarPage />} />
-          <Route path='/writing' element={<WritingPage />} />
+          <Route
+            path='/writing'
+            element={<WritingPage writing={writing} setWriting={setWriting}/>}
+          />
         </Routes>
       </Layout>
     </BrowserRouter>

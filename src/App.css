@@ -21,3 +21,18 @@ div {
   margin-top: 0;
   color: #2c3e50;
 }
+
+#user-writing
+{
+  height: 50vh;
+  width: 80vh;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: sans-serif;
+  resize: vertical;
+}
+
+#user-writing:focus {
+    border-color: #007bff;
+    outline: none;
+}

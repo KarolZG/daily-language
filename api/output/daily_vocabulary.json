@@ -1,304 +1,154 @@
 {
     "vocabulary": [
         {
+            "word": "die Tugend",
+            "translation": "virtue",
+            "special": "die Tugenden",
+            "cue": "Sounds like 'to good', a virtuous person is always good."
+        },
+        {
+            "word": "das Gleichgewicht",
+            "translation": "equilibrium/balance",
+            "special": "die Gleichgewichte",
+            "cue": "Gleich means equal, Gewicht means weight."
+        },
+        {
+            "word": "die Mäßigung",
+            "translation": "moderation",
+            "special": "die Mäßigungen",
+            "cue": "Contains 'Maß' meaning measure; staying within measure."
+        },
+        {
+            "word": "die Weisheit",
+            "translation": "wisdom",
+            "special": "die Weisheiten",
+            "cue": "Associated with the wise old white ('weiß') beards."
+        },
+        {
+            "word": "der Mut",
+            "translation": "courage",
+            "special": "die Mute",
+            "cue": "Sounds like 'moo', it takes courage to pet a cow."
+        },
+        {
+            "word": "die Gerechtigkeit",
+            "translation": "justice",
+            "special": "die Gerechtigkeiten",
+            "cue": "Derived from 'recht' (right); making things right."
+        },
+        {
+            "word": "die Vernunft",
+            "translation": "reason",
+            "special": "die Vernünfte",
+            "cue": "Thinking through things with a 'fun' (Vernunft) approach."
+        },
+        {
             "word": "die Schönheit",
             "translation": "beauty",
-            "special": "Schönheiten",
-            "cue": "Schönheit sounds like shine; beauty shines."
+            "special": "die Schönheiten",
+            "cue": "Schön is the root for beautiful."
         },
         {
-            "word": "das Gesicht",
-            "translation": "face",
-            "special": "Gesichter",
-            "cue": "Think of a 'ge-sight' for seeing."
+            "word": "die Wahrheit",
+            "translation": "truth",
+            "special": "die Wahrheiten",
+            "cue": "Wahr sounds like 'war', history is the truth of war."
         },
         {
-            "word": "die Haut",
-            "translation": "skin",
-            "special": "Häute",
-            "cue": "Haut rhymes with shout; keep your skin in check."
+            "word": "die Ehre",
+            "translation": "honor",
+            "special": "die Ehren",
+            "cue": "A short word for a big concept, like 'air' (Ehre) that you breathe."
         },
         {
-            "word": "das Haar",
-            "translation": "hair",
-            "special": "Haare",
-            "cue": "Like 'hair' but with an extra 'a'."
+            "word": "die Selbstbeherrschung",
+            "translation": "self-control",
+            "special": "die Selbstbeherrschungen",
+            "cue": "Selbst (self) + Beherrschung (governance)."
         },
         {
-            "word": "das Auge",
-            "translation": "eye",
-            "special": "Augen",
-            "cue": "Augen look like an 'O' and an 'en'."
+            "word": "der Geist",
+            "translation": "spirit/intellect",
+            "special": "die Geister",
+            "cue": "Like a ghost in the machine of your mind."
         },
         {
-            "word": "die Lippe",
-            "translation": "lip",
-            "special": "Lippen",
-            "cue": "Lippen is very close to lips."
+            "word": "die Anmut",
+            "translation": "grace",
+            "special": "die Anmute",
+            "cue": "An (on) + Mut (courage); grace is a brave way to move."
         },
         {
-            "word": "der Mund",
-            "translation": "mouth",
-            "special": "Münder",
-            "cue": "Mund sounds like 'moan'."
+            "word": "das Ideal",
+            "translation": "ideal",
+            "special": "die Ideale",
+            "cue": "Direct cognate to ideal."
         },
         {
-            "word": "die Nase",
-            "translation": "nose",
-            "special": "Nasen",
-            "cue": "Nase is basically nose."
+            "word": "die Vollkommenheit",
+            "translation": "perfection",
+            "special": "die Vollkommenheiten",
+            "cue": "Voll (full) + kommen (to come); everything has come to be full."
         },
         {
-            "word": "die Wange",
-            "translation": "cheek",
-            "special": "Wangen",
-            "cue": "Wangen sounds like 'wing' of the face."
+            "word": "die Bescheidenheit",
+            "translation": "humility",
+            "special": "die Bescheidenheiten",
+            "cue": "Bescheiden means to be limited in one's own estimation."
         },
         {
-            "word": "die Augenbraue",
-            "translation": "eyebrow",
-            "special": "Augenbrauen",
-            "cue": "Augen-brauen: eyes-brows."
+            "word": "die Tapferkeit",
+            "translation": "bravery",
+            "special": "die Tapferkeiten",
+            "cue": "Tapfer sounds like tapping your chest like a hero."
         },
         {
-            "word": "die Wimper",
-            "translation": "eyelash",
-            "special": "Wimpern",
-            "cue": "Wimpern sounds like 'wimp', lashes are delicate."
+            "word": "die Harmonie",
+            "translation": "harmony",
+            "special": "die Harmonien",
+            "cue": "Direct cognate to harmony."
         },
         {
-            "word": "die Stirn",
-            "translation": "forehead",
-            "special": "Stirnen",
-            "cue": "Stirn sounds like 'stern', a stern look uses the forehead."
+            "word": "die Disziplin",
+            "translation": "discipline",
+            "special": "die Disziplinen",
+            "cue": "Direct cognate to discipline."
         },
         {
-            "word": "das Kinn",
-            "translation": "chin",
-            "special": "Kinnen",
-            "cue": "Kinn sounds like chin."
+            "word": "die Güte",
+            "translation": "kindness",
+            "special": "die Güten",
+            "cue": "Root of 'gut' (good)."
         },
         {
-            "word": "das Ohr",
-            "translation": "ear",
-            "special": "Ohren",
-            "cue": "Ohr looks like an ear."
+            "word": "die Redlichkeit",
+            "translation": "integrity/honesty",
+            "special": "die Redlichkeiten",
+            "cue": "Connected to 'reden' (to speak); speaking truthfully."
         },
         {
-            "word": "der Hals",
-            "translation": "neck",
-            "special": "Hälse",
-            "cue": "Hals sounds like 'halt', stop at the neck."
+            "word": "das Maß",
+            "translation": "measure/proportion",
+            "special": "die Maße",
+            "cue": "The golden mean is the 'Maß'."
         },
         {
-            "word": "der Fingernagel",
-            "translation": "fingernail",
-            "special": "Fingernägel",
-            "cue": "Finger-nagel: finger-nail."
+            "word": "die Standhaftigkeit",
+            "translation": "steadfastness",
+            "special": "die Standhaftigkeiten",
+            "cue": "Stand (stand) + haft (clinging/firmly)."
         },
         {
-            "word": "das Lächeln",
-            "translation": "smile",
-            "special": "Lächeln",
-            "cue": "Lächeln is a happy sound."
+            "word": "die Einsicht",
+            "translation": "insight",
+            "special": "die Einsichten",
+            "cue": "Ein (into) + Sicht (sight); looking into something."
         },
         {
-            "word": "die Locke",
-            "translation": "curl",
-            "special": "Locken",
-            "cue": "Locken: 'lock' those curls in."
-        },
-        {
-            "word": "der Zopf",
-            "translation": "braid",
-            "special": "Zöpfe",
-            "cue": "Zopf sounds like a braid pattern."
-        },
-        {
-            "word": "die Kosmetik",
-            "translation": "cosmetics",
-            "special": "Kosmetiken",
-            "cue": "Sounds exactly like cosmetics."
-        },
-        {
-            "word": "das Make-up",
-            "translation": "make-up",
-            "special": "Make-ups",
-            "cue": "Direct loanword."
-        },
-        {
-            "word": "der Lippenstift",
-            "translation": "lipstick",
-            "special": "Lippenstifte",
-            "cue": "Lippen-stift: lip-stick."
-        },
-        {
-            "word": "die Mascara",
-            "translation": "mascara",
-            "special": "Mascaras",
-            "cue": "Direct loanword."
-        },
-        {
-            "word": "der Lidschatten",
-            "translation": "eyeshadow",
-            "special": "Lidschatten",
-            "cue": "Lid-schatten: lid-shadow."
-        },
-        {
-            "word": "das Puder",
-            "translation": "powder",
-            "special": "Puder",
-            "cue": "Sounds like powder."
-        },
-        {
-            "word": "das Parfüm",
-            "translation": "perfume",
-            "special": "Parfüms",
-            "cue": "Sounds like perfume."
-        },
-        {
-            "word": "die Creme",
-            "translation": "cream",
-            "special": "Cremes",
-            "cue": "Sounds like cream."
-        },
-        {
-            "word": "die Seife",
-            "translation": "soap",
-            "special": "Seifen",
-            "cue": "Seife sounds like 'safe' soap."
-        },
-        {
-            "word": "das Shampoo",
-            "translation": "shampoo",
-            "special": "Shampoos",
-            "cue": "Direct loanword."
-        },
-        {
-            "word": "der Kamm",
-            "translation": "comb",
-            "special": "Kämme",
-            "cue": "Kamm sounds like calm, keep your hair calm."
-        },
-        {
-            "word": "die Bürste",
-            "translation": "brush",
-            "special": "Bürsten",
-            "cue": "Sounds like bristle."
-        },
-        {
-            "word": "der Spiegel",
-            "translation": "mirror",
-            "special": "Spiegel",
-            "cue": "Mirror mirror on the wall, 'Spieglein' on the wall."
-        },
-        {
-            "word": "schön",
-            "translation": "beautiful",
-            "special": "schöner, am schönsten",
-            "cue": "Rhymes with 'bone' but with an 'sh' start."
-        },
-        {
-            "word": "hübsch",
-            "translation": "pretty",
-            "special": "hübscher, am hübschesten",
-            "cue": "Hübsch sounds like 'hoop', pretty hoop."
-        },
-        {
-            "word": "elegant",
-            "translation": "elegant",
-            "special": "eleganter, am elegantesten",
-            "cue": "Same as English."
-        },
-        {
-            "word": "glänzend",
-            "translation": "shiny",
-            "special": "glänzender, am glänzendsten",
-            "cue": "Glanz is glow."
-        },
-        {
-            "word": "weich",
-            "translation": "soft",
-            "special": "weicher, am weichsten",
-            "cue": "Sounds like 'why'."
-        },
-        {
-            "word": "gesund",
-            "translation": "healthy",
-            "special": "gesünder, am gesündesten",
-            "cue": "Gesund is 'go sound'."
-        },
-        {
-            "word": "strahlend",
-            "translation": "radiant",
-            "special": "strahlender, am strahlendsten",
-            "cue": "Strahl is a ray of light."
-        },
-        {
-            "word": "gepflegt",
-            "translation": "well-groomed",
-            "special": "gepflegter, am gepflegtesten",
-            "cue": "Pflege is care."
-        },
-        {
-            "word": "jung",
-            "translation": "young",
-            "special": "jünger, am jüngsten",
-            "cue": "Sounds like 'young'."
-        },
-        {
-            "word": "frisch",
-            "translation": "fresh",
-            "special": "frischer, am frischesten",
-            "cue": "Sounds like fresh."
-        },
-        {
-            "word": "die Maniküre",
-            "translation": "manicure",
-            "special": "Maniküren",
-            "cue": "Same as English."
-        },
-        {
-            "word": "die Pediküre",
-            "translation": "pedicure",
-            "special": "Pediküren",
-            "cue": "Same as English."
-        },
-        {
-            "word": "die Gesichtsmaske",
-            "translation": "face mask",
-            "special": "Gesichtsmasken",
-            "cue": "Gesicht-maske: face-mask."
-        },
-        {
-            "word": "der Nagellack",
-            "translation": "nail polish",
-            "special": "Nagellacke",
-            "cue": "Nagel-lack: nail-lacquer."
-        },
-        {
-            "word": "das Deo",
-            "translation": "deodorant",
-            "special": "Deos",
-            "cue": "Short for deodorant."
-        },
-        {
-            "word": "die Foundation",
-            "translation": "foundation",
-            "special": "Foundations",
-            "cue": "Loanword from English."
-        },
-        {
-            "word": "der Concealer",
-            "translation": "concealer",
-            "special": "Concealer",
-            "cue": "Loanword from English."
-        },
-        {
-            "word": "das Rouge",
-            "translation": "blush",
-            "special": "Rouges",
-            "cue": "Borrowed from French."
+            "word": "die Würde",
+            "translation": "dignity",
+            "special": "die Würden",
+            "cue": "Sounds like 'word', a dignified person keeps their word."
         }
     ]
 }

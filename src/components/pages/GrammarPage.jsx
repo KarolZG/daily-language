@@ -17,9 +17,9 @@ function GrammarPage() {
     }, [])
 
     if (loading) return <p>Loading...</p>;
-    console.log(grammar)
+    
     return (
-        <>
+        <div className='grammar-section'>
             <h1>Daily Grammar</h1>
             <h2>Subject: {grammar.title}</h2>
             <div>
@@ -34,7 +34,7 @@ function GrammarPage() {
                     <li key={index}>{item.example}</li>
                 ))}
             </ol>
-        </>
+        </div>
     );
 }
 
