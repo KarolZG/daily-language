@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import GrammarView from "../grammar/GrammarView"
 
 function GrammarPage() {
     const [grammar, setGrammar] = useState({});
@@ -17,24 +18,10 @@ function GrammarPage() {
     }, [])
 
     if (loading) return <p>Loading...</p>;
+    if (!grammar) return <p>Error loading grammar.</p>
     
     return (
-        <div className='grammar-section'>
-            <h1>Daily Grammar</h1>
-            <h2>Subject: {grammar.title}</h2>
-            <div>
-                {grammar.explanation.split('\n\n').map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                ))}
-            </div>
-            <br></br>
-            <h2>Examples:</h2>
-            <ol>
-                {grammar.examples.map((item, index) => (
-                    <li key={index}>{item.example}</li>
-                ))}
-            </ol>
-        </div>
+        <GrammarView data={grammar}/>
     );
 }
 

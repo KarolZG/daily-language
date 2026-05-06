@@ -9,7 +9,7 @@ function WritingExercise({ instruction, writing, setWriting, submitting, handleS
                 placeholder="Type your work here..."
                 disabled={submitting}
             />
-            <button onClick={handleSubmit}>
+            <button onClick={handleSubmit} disabled={submitting}>
                 {submitting ? "Submitting..." : "Submit Writing"}
             </button>
         </div>
