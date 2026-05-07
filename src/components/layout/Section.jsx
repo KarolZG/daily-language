@@ -1,20 +1,23 @@
 import { useState } from 'react';
+import { ChevronUp, ChevronDown} from 'lucide-react';
 
-function Section({ title, children }) {
-    const [isOpen, setIsOpen] = useState('true');
+function Section({ title, children, defaultOpen = true }) {
+    const [isOpen, setIsOpen] = useState(defaultOpen);
 
     return (
-        <div className='section' style={{ marginBottom: '20px', border: '1px solid #ccc', padding: '10px' }}>
+        <div className={`section-div ${isOpen ? 'is-open' : ''}`}>
             <div 
+                className='section-header'
                 onClick={() => setIsOpen(!isOpen)}
-                style={{ cursor: 'pointer', fontWeight: 'bold', display: 'flex', justifyContent: 'space-between' }}
             >
-                {title}
-                <span>{isOpen ? '▲ Collapse' : '▼ Expand' }</span>
+                <h3 className='section-title'>{title}</h3>
+                <span className='section-icon'>
+                    {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                </span>
             </div>
 
             {isOpen && (
-                <div className='section-content' style={{ marginTop: '10px' }}>
+                <div className='section-content'>
                     {children}
                 </div>
             )}

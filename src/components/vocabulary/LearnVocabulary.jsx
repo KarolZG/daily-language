@@ -2,11 +2,17 @@ import LearnVocabularyItem from "./LearnVocabularyItem";
 
 function LearnVocabulary({ vocabulary = [] }) {
     return (
-        <div className="vocab-learning">
-            <h1>Practice Vocabulary</h1>
-            {vocabulary.map((item, index) => (
-                <LearnVocabularyItem key={index} item={item} />
-            ))}
+        <div className="learning-container">
+            <header className="learning-header">
+                <h2 className="learning-title">Practice Session</h2>
+                <p className="learning-subtitle">Translate the following terms into the target language.</p>
+            </header>
+            
+            <div className="learning-list">
+                {vocabulary.map((item, index) => (
+                    <LearnVocabularyItem key={index} item={item} />
+                ))}
+            </div>
         </div>
     );
 }

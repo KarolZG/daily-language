@@ -4,16 +4,20 @@ function Layout({ status, children })
 {
     return (
         <div className='app-wrapper'>
-            <header>
-                    <Navbar status={status}/>
+            <header className='app-header'>
+                <Navbar status={status}/>
             </header>
 
-            <main>
-                {children}
+            <main className='app-content'>
+                <div className='content-inner'>
+                    {children}
+                </div>
             </main>
 
-            <footer>
-                <em>Copyright</em> &#169; Karol Zuzda 2026 - CS50x Final Project
+            <footer className='app-footer'>
+                <p>
+                    <em>Copyright</em> &#169; Karol Zuzda 2026 — CS50x Final Project
+                </p>
             </footer>
         </div>
     );
