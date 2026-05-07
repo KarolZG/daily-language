@@ -6,7 +6,7 @@ import Vocabulary from '../vocabulary/Vocabulary';
 import AskVocabulary from '../vocabulary/AskVocabulary';
 import LearnVocabulary from '../vocabulary/LearnVocabulary';
 
-function VocabularyPage() {
+function VocabularyPage({ onComplete }) {
   const [vocabulary, setVocabulary] = useState([]);
   const [hasData, setHasData] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -37,9 +37,10 @@ function VocabularyPage() {
 
         const data = await response.json();
 
-        if (data && data.vocabulary) {
+        if (data.vocabulary) {
           setVocabulary(data.vocabulary);
           setHasData(true);
+          onComplete();
         }
     } catch (err) {
       console.error("Fetch failed: ", err);

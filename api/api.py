@@ -21,6 +21,17 @@ initialize_environment()
 
 app = Flask(__name__)
 
+# Ensure the correct flow of daily language routine
+@app.route("/api/status", methods=["GET"])
+def get_status():
+    vocab_data = get_today_file(VOCABULARY_FILE_PATH)
+    grammar_data = get_today_file(GRAMMAR_FILE_PATH)
+    
+    return jsonify({
+        "vocabDone": bool((vocab_data or {}).get("vocabulary")),
+        "grammarDone": bool((grammar_data or {}).get("explanation"))
+    })
+
 # Generate the list of vocabulary
 @app.route("/api/vocabulary", methods=["GET", "POST"])
 def vocabulary():

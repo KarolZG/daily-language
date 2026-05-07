@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import GrammarView from "../grammar/GrammarView"
 
-function GrammarPage() {
+function GrammarPage({ onComplete }) {
     const [grammar, setGrammar] = useState({});
     const [loading, setLoading] = useState(true);
 
@@ -12,10 +12,11 @@ function GrammarPage() {
             if (data && data.title && data.explanation && data.examples) 
             {
                 setGrammar(data);
+                onComplete();
             }
             setLoading(false);
         });
-    }, [])
+    }, [onComplete])
 
     if (loading) return <p>Loading...</p>;
     if (!grammar) return <p>Error loading grammar.</p>

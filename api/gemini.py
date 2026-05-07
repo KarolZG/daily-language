@@ -60,7 +60,8 @@ class WritingInstruction(BaseModel):
     
 class WritingFeedback(BaseModel):
     mistakes: str = Field(description="Mistakes made")
-    corrected_version: str = Field(description="Improved version of user writing suggested by Gemini. Corrections needs to be bold and italized.")
+    corrected_version: str = Field(description="""Improved version of user writing suggested by Gemini. 
+                                   Wrap corrections in specific HTML tags like <correction>word</correction>""")
     feedback: str = Field(description="""Mistakes and proper structure explanation provided in English.
                           Tips for the future and encouragement to keep up with learning.""")
 

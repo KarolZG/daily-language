@@ -1,154 +1,154 @@
 {
     "vocabulary": [
         {
-            "word": "die Tugend",
-            "translation": "virtue",
-            "special": "die Tugenden",
-            "cue": "Sounds like 'to good', a virtuous person is always good."
+            "word": "la musica",
+            "translation": "music",
+            "special": "le musiche",
+            "cue": "Sounds like 'music' in English."
         },
         {
-            "word": "das Gleichgewicht",
-            "translation": "equilibrium/balance",
-            "special": "die Gleichgewichte",
-            "cue": "Gleich means equal, Gewicht means weight."
+            "word": "il concerto",
+            "translation": "concert",
+            "special": "i concerti",
+            "cue": "Shared root with 'concert'."
         },
         {
-            "word": "die Mäßigung",
-            "translation": "moderation",
-            "special": "die Mäßigungen",
-            "cue": "Contains 'Maß' meaning measure; staying within measure."
+            "word": "la canzone",
+            "translation": "song",
+            "special": "le canzoni",
+            "cue": "Think of the Italian singer's 'chanson'."
         },
         {
-            "word": "die Weisheit",
-            "translation": "wisdom",
-            "special": "die Weisheiten",
-            "cue": "Associated with the wise old white ('weiß') beards."
+            "word": "il pianoforte",
+            "translation": "piano",
+            "special": "i pianoforti",
+            "cue": "Piano (soft) + forte (loud)."
         },
         {
-            "word": "der Mut",
-            "translation": "courage",
-            "special": "die Mute",
-            "cue": "Sounds like 'moo', it takes courage to pet a cow."
+            "word": "la chitarra",
+            "translation": "guitar",
+            "special": "le chitarre",
+            "cue": "Sounds like 'guitar'."
         },
         {
-            "word": "die Gerechtigkeit",
-            "translation": "justice",
-            "special": "die Gerechtigkeiten",
-            "cue": "Derived from 'recht' (right); making things right."
+            "word": "il violino",
+            "translation": "violin",
+            "special": "i violini",
+            "cue": "Sounds like 'violin'."
         },
         {
-            "word": "die Vernunft",
-            "translation": "reason",
-            "special": "die Vernünfte",
-            "cue": "Thinking through things with a 'fun' (Vernunft) approach."
+            "word": "la batteria",
+            "translation": "drums",
+            "special": "le batterie",
+            "cue": "Battery of drums."
         },
         {
-            "word": "die Schönheit",
-            "translation": "beauty",
-            "special": "die Schönheiten",
-            "cue": "Schön is the root for beautiful."
+            "word": "il cantante",
+            "translation": "singer",
+            "special": "i cantanti",
+            "cue": "Canta = sings."
         },
         {
-            "word": "die Wahrheit",
-            "translation": "truth",
-            "special": "die Wahrheiten",
-            "cue": "Wahr sounds like 'war', history is the truth of war."
+            "word": "l'orchestra",
+            "translation": "orchestra",
+            "special": "le orchestre",
+            "cue": "Same as English."
         },
         {
-            "word": "die Ehre",
-            "translation": "honor",
-            "special": "die Ehren",
-            "cue": "A short word for a big concept, like 'air' (Ehre) that you breathe."
+            "word": "il ritmo",
+            "translation": "rhythm",
+            "special": "i ritmi",
+            "cue": "Sounds like 'rhythm'."
         },
         {
-            "word": "die Selbstbeherrschung",
-            "translation": "self-control",
-            "special": "die Selbstbeherrschungen",
-            "cue": "Selbst (self) + Beherrschung (governance)."
+            "word": "la nota",
+            "translation": "note",
+            "special": "le note",
+            "cue": "Same as English."
         },
         {
-            "word": "der Geist",
-            "translation": "spirit/intellect",
-            "special": "die Geister",
-            "cue": "Like a ghost in the machine of your mind."
+            "word": "il suono",
+            "translation": "sound",
+            "special": "i suoni",
+            "cue": "Close to 'sound'."
         },
         {
-            "word": "die Anmut",
-            "translation": "grace",
-            "special": "die Anmute",
-            "cue": "An (on) + Mut (courage); grace is a brave way to move."
+            "word": "la melodia",
+            "translation": "melody",
+            "special": "le melodie",
+            "cue": "Same as English."
         },
         {
-            "word": "das Ideal",
-            "translation": "ideal",
-            "special": "die Ideale",
-            "cue": "Direct cognate to ideal."
+            "word": "lo spartito",
+            "translation": "sheet music",
+            "special": "gli spartiti",
+            "cue": "Separated notes on paper."
         },
         {
-            "word": "die Vollkommenheit",
-            "translation": "perfection",
-            "special": "die Vollkommenheiten",
-            "cue": "Voll (full) + kommen (to come); everything has come to be full."
+            "word": "il coro",
+            "translation": "choir",
+            "special": "i cori",
+            "cue": "Like a 'chorus' in a song."
         },
         {
-            "word": "die Bescheidenheit",
-            "translation": "humility",
-            "special": "die Bescheidenheiten",
-            "cue": "Bescheiden means to be limited in one's own estimation."
+            "word": "l'opera",
+            "translation": "opera",
+            "special": "le opere",
+            "cue": "Same as English."
         },
         {
-            "word": "die Tapferkeit",
-            "translation": "bravery",
-            "special": "die Tapferkeiten",
-            "cue": "Tapfer sounds like tapping your chest like a hero."
+            "word": "il direttore",
+            "translation": "conductor",
+            "special": "i direttori",
+            "cue": "The director of the music."
         },
         {
-            "word": "die Harmonie",
+            "word": "il palcoscenico",
+            "translation": "stage",
+            "special": "i palcoscenici",
+            "cue": "Where the action happens."
+        },
+        {
+            "word": "il sassofono",
+            "translation": "saxophone",
+            "special": "i sassofoni",
+            "cue": "Sounds like 'saxophone'."
+        },
+        {
+            "word": "la tromba",
+            "translation": "trumpet",
+            "special": "le trombe",
+            "cue": "Sounds like a loud 'tromb' sound."
+        },
+        {
+            "word": "il flauto",
+            "translation": "flute",
+            "special": "i flauti",
+            "cue": "Sounds like 'flute'."
+        },
+        {
+            "word": "il volume",
+            "translation": "volume",
+            "special": "i volumi",
+            "cue": "Same as English."
+        },
+        {
+            "word": "l'armonia",
             "translation": "harmony",
-            "special": "die Harmonien",
-            "cue": "Direct cognate to harmony."
+            "special": "le armonie",
+            "cue": "Same as English."
         },
         {
-            "word": "die Disziplin",
-            "translation": "discipline",
-            "special": "die Disziplinen",
-            "cue": "Direct cognate to discipline."
+            "word": "la traccia",
+            "translation": "track",
+            "special": "le tracce",
+            "cue": "Like a 'trace' of a song."
         },
         {
-            "word": "die Güte",
-            "translation": "kindness",
-            "special": "die Güten",
-            "cue": "Root of 'gut' (good)."
-        },
-        {
-            "word": "die Redlichkeit",
-            "translation": "integrity/honesty",
-            "special": "die Redlichkeiten",
-            "cue": "Connected to 'reden' (to speak); speaking truthfully."
-        },
-        {
-            "word": "das Maß",
-            "translation": "measure/proportion",
-            "special": "die Maße",
-            "cue": "The golden mean is the 'Maß'."
-        },
-        {
-            "word": "die Standhaftigkeit",
-            "translation": "steadfastness",
-            "special": "die Standhaftigkeiten",
-            "cue": "Stand (stand) + haft (clinging/firmly)."
-        },
-        {
-            "word": "die Einsicht",
-            "translation": "insight",
-            "special": "die Einsichten",
-            "cue": "Ein (into) + Sicht (sight); looking into something."
-        },
-        {
-            "word": "die Würde",
-            "translation": "dignity",
-            "special": "die Würden",
-            "cue": "Sounds like 'word', a dignified person keeps their word."
+            "word": "il disco",
+            "translation": "record/album",
+            "special": "i dischi",
+            "cue": "A physical disk."
         }
     ]
 }

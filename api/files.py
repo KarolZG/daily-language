@@ -23,7 +23,7 @@ def get_today_file(file_path):
         if last_modified == datetime.now().date():
             with open(file_path, 'r') as file:
                 return json.load(file)
-    return None
+    return {}
 
 # Save the api call response to file upon first succcessful api call
 def save_to_file(data, file_path):

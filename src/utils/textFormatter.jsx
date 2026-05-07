@@ -9,7 +9,7 @@ export const formatFeedback = (text) => {
 
     return parts.map((part, index) => {
         if (part.startsWith("<correction>")) {
-            const word = parts.replace(/<\/correction>/g, "");
+            const word = part.replace(/<\/?correction>/g, "");
             return (
                 <span
                     key={index}

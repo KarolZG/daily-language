@@ -1,17 +1,11 @@
-import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
-function Layout({ children })
+function Layout({ status, children })
 {
     return (
         <div className='app-wrapper'>
             <header>
-                <nav>
-                    <ul>
-                        <li><Link to="/">Vocabulary</Link></li>
-                        <li><Link to="/grammar">Grammar</Link></li>
-                        <li><Link to="/writing">Writing</Link></li>
-                    </ul>
-                </nav>
+                    <Navbar status={status}/>
             </header>
 
             <main>

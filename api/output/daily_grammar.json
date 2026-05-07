@@ -1,18 +1,18 @@
 {
-    "title": "The German Modal Verbs",
-    "explanation": "German modal verbs are a specific group of auxiliary verbs used to express necessity, possibility, permission, or ability. The six primary modal verbs are dürfen, können, mögen, müssen, sollen, and wollen. These verbs fundamentally change the mood or intent of a sentence by modifying the main verb, which almost always appears in the infinitive form at the very end of the clause.",
+    "title": "The Italian Passato Prossimo",
+    "explanation": "The passato prossimo is the most commonly used past tense in Italian. It is a compound tense, meaning it is formed by combining an auxiliary verb—either avere (to have) or essere (to be)—with the past participle of the main verb. It is used to describe completed actions that happened at a specific point in the past or actions that have relevance to the present. For most transitive verbs, you use avere as the auxiliary, while intransitive verbs, especially those indicating movement, state of being, or reflexive actions, generally take essere.",
     "examples": [
         {
-            "example": "Ich kann heute leider nicht kommen."
+            "example": "Ho mangiato una pizza ieri sera."
         },
         {
-            "example": "Du musst deine Hausaufgaben machen."
+            "example": "Siamo andati al cinema sabato scorso."
         },
         {
-            "example": "Darf ich eine Frage stellen?"
+            "example": "Maria ha comprato un libro nuovo."
         },
         {
-            "example": "Wir wollen am Wochenende wandern gehen."
+            "example": "Lui è arrivato in ritardo."
         }
     ]
 }
