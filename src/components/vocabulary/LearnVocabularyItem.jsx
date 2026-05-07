@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { CheckCircle2, XCircle, ArrowRight } from 'lucide-react';
 
-function LearnVocabularyItem({ item })
+function LearnVocabularyItem({ index, item })
 {
     const [input, setInput] = useState('');
     const [status, setStatus] = useState(null);
 
+    // Verifing the user input
     const checkAnswer = (e) => {
         e.preventDefault();
         if (input.trim().toLowerCase() === item.word.toLowerCase())
@@ -18,8 +19,22 @@ function LearnVocabularyItem({ item })
         }
     };
 
+    // Keys navigation between the learn-item inputs
+    const handleKeyDown = (e, index) => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault();
+
+            const inputs = document.querySelectorAll(".learning-item-input");
+            const nextIndex = e.key === 'ArrowDown' ? index + 1 : index - 1;
+
+            if (inputs[nextIndex]) {
+                inputs[nextIndex].focus();
+            }
+        }
+    }
+
     return (
-        <div className={`learning-item ${status ? `is-${status}` : ''}`}>
+        <div index={index} className={`learning-item ${status ? `is-${status}` : ''}`}>
             <form className="learning-item-form" onSubmit={checkAnswer} autoComplete="off">
                 <div className="learning-item-content">
                     <span className="learning-item-label">{item.translation}</span>
@@ -29,9 +44,11 @@ function LearnVocabularyItem({ item })
                         className="learning-item-input"
                         placeholder="Type translation..."
                         value={input}
+                        onKeyDown={(e) => handleKeyDown(e, index)}
                         onChange={(e) => {
                             setInput(e.target.value);
-                            if (status) setStatus(null); // Reset status when typing
+                            // Reset status when typing
+                            if (status) setStatus(null);
                         }}
                     />
                 </div>

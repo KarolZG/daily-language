@@ -1,6 +1,7 @@
 # Prompting Gemini for the vocabulary list with basic additions and memorization cues
 # One successful call per day with data written into the file
 import json
+import logging
 import os
 import time
 
@@ -95,10 +96,12 @@ def gemini_request(content, schema, file_path, force_fresh=False, update_mode=Fa
                 save_to_file(data, file_path)
             return data, False
         except Exception as ex:
+            logging.warning(f"Gemini API Attempt {i+1} failed: {str(ex)}")
             if i < MAX_RETRIES - 1:
-                time.sleep(2) 
+                time.sleep(2)
                 continue
             else:
+                logging.error("All Gemini retries exhausted.")
                 raise ex
 
 # Prompt Gemini for the list of word dictionaries with specificed key value pairs 

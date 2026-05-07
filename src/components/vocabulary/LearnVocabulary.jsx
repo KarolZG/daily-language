@@ -10,7 +10,7 @@ function LearnVocabulary({ vocabulary = [] }) {
             
             <div className="learning-list">
                 {vocabulary.map((item, index) => (
-                    <LearnVocabularyItem key={index} item={item} />
+                    <LearnVocabularyItem key={index} index={index} item={item} />
                 ))}
             </div>
         </div>

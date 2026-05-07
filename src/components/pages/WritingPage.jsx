@@ -36,7 +36,12 @@ function WritingPage({ writing, setWriting }) {
         }
     };
 
-    if (loading) return <p>Loading...</p>
+    if (loading) return (
+        <div className="loading-container">
+            <div className="gemini-loader"></div>
+            <p>Fetching Daily Writing</p>
+        </div>
+    );
 
     return (
         <>

@@ -49,7 +49,12 @@ function VocabularyPage({ onComplete }) {
     }
   }
 
-  if (loading) return <p>Loading ...</p>; 
+  if (loading) return (
+        <div className="loading-container">
+            <div className="gemini-loader"></div>
+            <p>Fetching Daily Vocabulary</p>
+        </div>
+    );
 
   return (
     <>
