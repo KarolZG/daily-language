@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+import DataGate from '../common/DataGate';
 import Section from '../layout/Section';
 
 import Vocabulary from '../vocabulary/Vocabulary';
@@ -49,15 +50,8 @@ function VocabularyPage({ onComplete }) {
     }
   }
 
-  if (loading) return (
-        <div className="loading-container">
-            <div className="gemini-loader"></div>
-            <p>Fetching Daily Vocabulary</p>
-        </div>
-    );
-
   return (
-    <>
+    <DataGate loading={loading} data={vocabulary} section="Vocabulary" allowEmpty={true}>
       {hasData ? (
         <>
           <Section title="Daily Vocabulary List">
@@ -70,7 +64,7 @@ function VocabularyPage({ onComplete }) {
       ) : (
         <AskVocabulary onSubmit={fetchVocabulary} />
       )}
-    </>
+    </DataGate>
   );
 }
 

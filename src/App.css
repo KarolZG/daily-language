@@ -804,3 +804,86 @@
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* Error handling */
+.error-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: rgba(242, 139, 130, 0.05); /* Muted Red-ish background */
+    border: 1px solid rgba(242, 139, 130, 0.2);
+    border-radius: 24px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    animation: slideUp 0.4s ease-out;
+}
+
+.error-icon-wrapper {
+    background-color: rgba(242, 139, 130, 0.1);
+    color: #f28b82; /* Muted Red */
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.error-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gemini-text-main);
+    margin: 0;
+}
+
+.error-message {
+    font-size: 1rem;
+    color: var(--gemini-text-subtle);
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+}
+
+.error-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.error-retry-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--gemini-bg-lighter);
+    border: 1px solid var(--gemini-border);
+    color: var(--gemini-text-main);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.error-retry-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--gemini-text-subtle);
+}
+
+.error-retry-btn svg {
+    transition: transform 0.4s ease;
+}
+
+.error-retry-btn:hover svg {
+    transform: rotate(180deg);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

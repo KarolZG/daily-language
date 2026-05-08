@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import DataGate from "../common/DataGate";
 import Writing from "../writing/Writing";
 
 function WritingPage({ writing, setWriting }) {
@@ -36,24 +37,17 @@ function WritingPage({ writing, setWriting }) {
         }
     };
 
-    if (loading) return (
-        <div className="loading-container">
-            <div className="gemini-loader"></div>
-            <p>Fetching Daily Writing</p>
-        </div>
-    );
-
     return (
-        <>
+        <DataGate loading={loading} data={data} section="Writing" allowEmpty={true}>
             <Writing
-                instruction={data.instruction}
+                instruction={data?.instruction}
                 writing={writing}
                 setWriting={setWriting}
-                savedFeedback={data.feedback ? data : null}
+                savedFeedback={data?.feedback ? data : null}
                 onSumbit={handleSubmit}
                 isSubmitting={submitting}
             />
-        </>
+        </DataGate>
     );
 }
 

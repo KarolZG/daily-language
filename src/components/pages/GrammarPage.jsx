@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import DataGate from '../common/DataGate';
 import GrammarView from "../grammar/GrammarView"
 
 function GrammarPage({ onComplete }) {
@@ -32,17 +33,11 @@ function GrammarPage({ onComplete }) {
         return () => { isMounted = false; };
     }, [onComplete])
 
-    if (loading) return (
-        <div className="loading-container">
-            <div className="gemini-loader"></div>
-            <p>Fetching Daily Grammar</p>
-        </div>
-    );
-
-    if (!grammar) return <p className="error-text">No grammar session found for today.</p>;
     
     return (
-        <GrammarView data={grammar}/>
+        <DataGate loading={loading} data={grammar} section="Grammar">
+            <GrammarView data={grammar}/>
+        </DataGate>
     );
 }
 
