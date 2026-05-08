@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api": "cd api && .venv/bin/flask run --no--debuger"
+    "api": "cd api && .venv/bin/flask run --no-debuger"
   },
   "dependencies": {
     "lucide-react": "^1.14.0",
