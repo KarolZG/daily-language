@@ -1,5 +1,4 @@
 // Function created to replace the HTML correction tags in writing feedback
-// By green, bold text
 
 export const formatFeedback = (text) => {
     if (!text) return "";
