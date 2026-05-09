@@ -47,14 +47,58 @@ Currently Google provides us with limit of the api calls sufficient for way more
 ## 5. ✨ Gemini constrains  
 As mentioned by itself - Gemini is an AI and can make mistakes. The model used in this project is _gemini-3.1-flash-lite-preview_. When given general topic for vocabulary subject with too many inquiries, e.g. 50 words connected with thema greetings, it may start to hallucinate 😵‍💫 providing you with non-exisitng expressions as in case of Yoruba, Georgian, and Italian (as observed during testing with my lovely roommmates).
 
+With more than 50 words the responses returned were incomplete, missing the required fields. Feel free to consult section 6 and adjust the response structure.  
+
 In case of any doubts always consult the dictionary or any reliable source.
 
-Rarely during the development of the app I have came across more than three 503 requests. I have followed the industry best practices and handled this exception by 2s sleep, repeated 3 times as specificed in **_/api/gemini.py_ gemini_request** function. After 3 unsuccesful api calls function returns the exception and the user needs to reload the app using frontend interface.
+Rarely during the development of the app I have came across more than three 503 requests. I have followed the industry best practices and handled this exception by 2s sleep, repeated 3 times as specificed in _/api/gemini.py_ `gemini_request` function. After 3 unsuccesful api calls function returns the exception and the user needs to reload the app using frontend interface.
 
 ## 6. 📂 App structure
 
+App uses React initialized using Vite for Frontend and Python Flask for backend.
+
+> Using `npm run api` executes `cd api && .venv/bin/flask run --no-debugger` as defined in package.json.
+
+#### Backend
+
+Directory: _api/_
+
+| File | Purpose |
+| ---- | ------- |
+| api.py | Flask app, handles server requests |
+| files.py | JSON file management helper functions - getters, creating and updating files, checking modification date |
+| gemini.py | Gemini API response structures and Google task specific API calls |
+
+#### Output
+
+Directory: _api/output_ (created and checked before every flask app run)
+
+| File | Purpose |
+| ---- | ------- |
+| daily_settings.py |  |
+| daily_vocabulary.py | |
+| daily_grammar.py | |
+| previous_grammar_topics.py | |
+| daily_writing.py | |
+
+#### Frontend
+
+##### Container Components
+
+Directory: /src/components/pages
+Directory: /src/components/common
+
+##### Presentational Components
+
+Directory: /src/components/layout
+Directory: /src/components/vocabulary
+Directory: /src/components/grammar
+Directory: /src/components/writing
+
+#### Styling
+
 ## 7. 🙏 Acknowledgments
-Special thanks for everyone involved in making of _CS50: Harvard Introduction to Computer Science course_ for an amazing opportunity to learn the CS fundamentals. To my roommates for giving their feedback on the lanugage content and app design. Finally to Phil, Rohan, and Akash for showing me what Giga Chads programmers can be!
+Special thanks for everyone involved in making of _CS50: Harvard Introduction to Computer Science course_ for an amazing opportunity to learn the CS fundamentals. To my roommates for giving their feedback on the lanugage content and app design. Finally to Phil, Rohan, and Akash for showing me what Giga Chads software developers can be!
 
 > **CS50x Final Project**
 
