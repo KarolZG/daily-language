@@ -3,7 +3,7 @@
 **The Web App built to help you to excel at the language of your choice. It consists of 3 exercises:**
   * vocabulary  
   * grammar  
-  * writing  
+  * writing
 **that you can and should practice daily.**
 
 ## 📋 Prerequisites
@@ -36,21 +36,23 @@ Daily Language consists out of 3 exercises. The project files are saved in _/api
 
 3. _Daily Writing_
 * In order to unblock this section you need to generate both the daily vocabulary and grammar. You will be presented with a short writing task in the language of your choice involving the subject chosed for the vocabulary generation and randomly assigned grammar topic. 
-* All related outputs can be found in __daily_writing.json__.
+* All related outputs can be found in **__daily_writing.json__**.
 * Upon submission the writing will be sent for review. Successful api call response results in showing the corrected version, mistakes made and general feedback.
 
 ## 4. 💡 The "philosophy" behind
-It's meant to be a tool for daily, routine practice. Nothing more, nothing less. It uses json files instead of database and doesn't have history feature because: 
+It's meant to be a tool for a routine practice. Nothing more, nothing less. It uses json files instead of database and doesn't have history feature because: 
 * ideally the results should be found back in user's memory, not the computer ones
-* it's meant to be a personal app for individual, systematic, focused practice, without any user tracking involved
+* it's meant to be a personal app for individual, systematic, and focused practice, without any user tracking involved
 
-  Currently Google gives provides possibility to generate the api calls for way more than one practice cycle. The design is minimalistic though and uses them sparingly, for one successful api call per section (except the daily writing - 2x successful api calls have to be made). The results of these call are being saved in the output directory for further reference. Each time the according program file is being checked for the modification date. Only if the file hasn't been modified on the given day new cycle can be started (this constrain can be easilt overwritten though by simply deleting the output directory, specific project files or key-value pairs).
-  
+Currently Google provides us with limit of the api calls sufficient for way more than one practice cycle. The design is kept minimalistic though and uses them sparingly - one successful api call per section (except the daily writing - 2x successful api calls have to be made). The results of these requests are being saved in the output directory for further reference. Each time the according program file is being checked for the modification date. Only if the file hasn't been modified on the given day, new cycle starts (this constrain can be easily overwritten by simply deleting the output directory, specific project files or it's key-value pairs).
+
 ## 5. ✨ Gemini constrains  
-Gemini is AI and can make mistakes. 
+Gemini is an AI and can make mistakes. The model used for api calls in this project is 
+
 ## 6. 📂 App structure
 
 ## 7. 🙏 Acknowledgments
+Special thanks for everyone involved in making of _CS50: Harvard Introduction to Computer Science course_ for an amazing opportunity to learn the CS fundamentals. Also thank you to Phil, Rohan and Akash for showing me what Giga Chads Software Developers can be!
 
 > **CS50x Final Project**
 
