@@ -1,13 +1,11 @@
 # 🌎 Daily Language
 
-**The Web App built to help you to excel at the language of your choice. It consists of 3 exercises:**
-  * vocabulary  
-  * grammar  
-  * writing  
-**that you can and should practice daily.**
+**The Web App built to help you to excel at the language of your choice. It consists of 3 exercises that you can and should practice daily.**
 
 ## 📋 Prerequisites
-To run this app you need: Node Package Manager and Gemini API key.
+To run this app you need:
+* Node Package Manager (npm)
+* Gemini API key
 
 ## 1. ⚙️ How to setup it up?
 1. Download the local copy of this repository.
@@ -25,16 +23,16 @@ To run this app you need: Node Package Manager and Gemini API key.
 
 ## 3. 📖 Section walkthrough
 Daily Language consists out of 3 sections. The results of each are saved in _/api/output_ directory.
-### 1. _Daily Vocabulary_  
+#### 1. _Daily Vocabulary_  
 * You can generate 10, 25 or 50 words in the language of your choice on any topic you like. The general rule of thumb is to match the amount to the subject.
 * e.g. it's difficult to generate 50 words regarding topic "greetings" and the model may halucinate. More on that in section 5.  
 * Upon generation the dictionary is saved in json file **__daily_vocabulary.json__** and both the language and vocabulary topic are stored in **__daily_settings.json__** for further reference.
 
-### 2. _Daily Grammar_  
+#### 2. _Daily Grammar_  
 * In order to unblock this section you need to first generate the vocabulary on the given day. The grammar paragraph will be generated automatically upon page visit, it's content saved in **__daily_grammar.json__** and the subject added to **__previous_grammar_topics.json__**.  
 * The last file mentioned is used to keep track of already learned topics. As every project file it can be edited or deleted.  
 
-### . _Daily Writing_
+#### 3. _Daily Writing_
 * In order to unblock this section you need to generate both the daily vocabulary and grammar. You will be presented with a short writing task in the language of your choice involving the subject chosed for the vocabulary generation and randomly assigned grammar topic. 
 * All related outputs can be found in **__daily_writing.json__**.
 * Upon submission the writing will be sent for review. Successful api call response results in showing the corrected version, mistakes made and general feedback.
@@ -47,12 +45,16 @@ It's meant to be a tool for a routine practice. Nothing more, nothing less. It u
 Currently Google provides us with limit of the api calls sufficient for way more than one practice cycle. The design is kept minimalistic though and uses them sparingly - one successful api call per section (except the daily writing - 2x successful api calls have to be made). The results of these requests are being saved in the output directory for further reference. Each time the according program file is being checked for the modification date. Only if the file hasn't been modified on the given day, new cycle starts (this constrain can be easily overwritten by simply deleting the output directory, specific project files or it's key-value pairs).
 
 ## 5. ✨ Gemini constrains  
-Gemini is an AI and can make mistakes. The model used for api calls in this project is 
+As mentioned by itself - Gemini is an AI and can make mistakes. The model used in this project is _gemini-3.1-flash-lite-preview_. When given general topic for vocabulary subject with too many inquiries, e.g. 50 words connected with thema greetings, it may start to hallucinate 😵‍💫 providing you with non-exisitng expressions as in case of Yoruba, Georgian, and Italian (as observed during testing with my lovely roommmates).
+
+In case of any doubts always consult the dictionary or any reliable source.
+
+Rarely during the development of the app I have came across more than three 503 requests. I have followed the industry best practices and handled this exception by 2s sleep, repeated 3 times as specificed in **_/api/gemini.py_ gemini_request** function. After 3 unsuccesful api calls function returns the exception and the user needs to reload the app using frontend interface.
 
 ## 6. 📂 App structure
 
 ## 7. 🙏 Acknowledgments
-Special thanks for everyone involved in making of _CS50: Harvard Introduction to Computer Science course_ for an amazing opportunity to learn the CS fundamentals. Also thank you to Phil, Rohan and Akash for showing me what Giga Chads Software Developers can be!
+Special thanks for everyone involved in making of _CS50: Harvard Introduction to Computer Science course_ for an amazing opportunity to learn the CS fundamentals. To my roommates for giving their feedback on the lanugage content and app design. Finally to Phil, Rohan, and Akash for showing me what Giga Chads programmers can be!
 
 > **CS50x Final Project**
 
