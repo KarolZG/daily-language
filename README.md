@@ -59,9 +59,9 @@ App uses React initialized using Vite for Frontend and Python Flask for backend.
 
 > Using `npm run api` executes `cd api && .venv/bin/flask run --no-debugger` as defined in package.json.
 
-#### Backend
+### Backend
 
-Directory: _api/_
+**Directory: _api/_**
 
 | File | Purpose |
 | ---- | ------- |
@@ -71,24 +71,27 @@ Directory: _api/_
 
 #### Output
 
-Directory: _api/output_ (created and checked before every flask app run)
+**Directory: _api/output_ (directory created and checked before any api calls)**
+
+> All the files here upon finishing the cycle are to be overwritten only on the following day (for updating already existing parameters the modification date, can't be today).
 
 | File | Purpose |
 | ---- | ------- |
-| daily_settings.py |  |
-| daily_vocabulary.py | |
-| daily_grammar.py | |
-| previous_grammar_topics.py | |
-| daily_writing.py | |
+| daily_settings.json | Stores language, vocabulary_subject and grammar_topic. If doesn't exist, created during the flask environment initialization. Updated after successful api call for each exercise |
+| daily_vocabulary.json | Stores the vocabulary objects dictionary. Created upon the first successful `/api/vocabulary` call. Updated upon each following successful call by rewriting the file with the new values. |
+| daily_grammar.json | Stores the grammar topic title and explanation. Created upon the first successful `/api/grammar` call. Updated upon each following successful call by rewriting the file with the new values. |
+| previous_grammar_topics.json | Stores all grammar topics titles discussed so far. Created upon the first successful `/api/grammar` call. Updated upon each following successful call by appending the new topics. |
+| daily_writing.json | Stores the writing exercise instruction, user_writing, corrected_version, mistakes, and feedback. Created upon the first successful `/api/grammar` api call and populated with the instruction. Updated with user_writing upon submission and the rest parameters upon successful gemini api call. Updated upon each following successful call by rewriting the file with the new values. |
 
-#### Frontend
+#### Container Components 
 
-##### Container Components
+**Directory: /src/components/pages**
 
-Directory: /src/components/pages
-Directory: /src/components/common
 
-##### Presentational Components
+
+**Directory: /src/components/common**
+
+#### Presentational Components
 
 Directory: /src/components/layout
 Directory: /src/components/vocabulary
