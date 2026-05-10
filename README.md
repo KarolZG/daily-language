@@ -2,8 +2,7 @@
 
 **The Web App built to help you to excel at the language of your choice. It consists of 3 exercises that you can and should practice daily.**
 
-## 🎬 Video Demo
-<iframe width="1374" height="773" src="https://www.youtube.com/embed/BJOMMmGI8ZA?list=PL5DsOgSlMPiLQ6SUp0tUB9d1dk-CFmPRD" title="Daily Language Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## 🎬 Video Demo: [Daily Language YouTube](https://www.youtube.com/watch?v=BJOMMmGI8ZA "Daily Language Video Demo")
 
 ## 📋 Prerequisites
 To run this app you need:
