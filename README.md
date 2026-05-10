@@ -73,32 +73,73 @@ App uses React initialized using Vite for Frontend and Python Flask for backend.
 
 **Directory: _api/output_ (directory created and checked before any api calls)**
 
-> All the files here upon finishing the cycle are to be overwritten only on the following day (for updating already existing parameters the modification date, can't be today).
+> All the project files are to be overwritten only the following day (the modification date can't be today).
 
 | File | Purpose |
 | ---- | ------- |
 | daily_settings.json | Stores language, vocabulary_subject and grammar_topic. If doesn't exist, created during the flask environment initialization. Updated after successful api call for each exercise |
-| daily_vocabulary.json | Stores the vocabulary objects dictionary. Created upon the first successful `/api/vocabulary` call. Updated upon each following successful call by rewriting the file with the new values. |
-| daily_grammar.json | Stores the grammar topic title and explanation. Created upon the first successful `/api/grammar` call. Updated upon each following successful call by rewriting the file with the new values. |
-| previous_grammar_topics.json | Stores all grammar topics titles discussed so far. Created upon the first successful `/api/grammar` call. Updated upon each following successful call by appending the new topics. |
-| daily_writing.json | Stores the writing exercise instruction, user_writing, corrected_version, mistakes, and feedback. Created upon the first successful `/api/grammar` api call and populated with the instruction. Updated with user_writing upon submission and the rest parameters upon successful gemini api call. Updated upon each following successful call by rewriting the file with the new values. |
+| daily_vocabulary.json | Stores the vocabulary objects dictionary. Created upon the first successful `/api/vocabulary` call. Updated after each following successful call by rewriting the file with the new values. |
+| daily_grammar.json | Stores the grammar topic title and explanation. Created upon the first successful `/api/grammar` call. Updated after each following successful call by rewriting the file with the new values. |
+| previous_grammar_topics.json | Stores all grammar topics titles discussed so far. Created upon the first successful `/api/grammar` call. Updated after each following successful call by appending the new topics. |
+| daily_writing.json | Stores the writing exercise instruction, user_writing, corrected_version, mistakes, and feedback. Created upon the first successful `/api/grammar` call and populated with the instruction. Updated with user_writing upon submission. Updated with corrected_version, mistakes, and feedback upon successful gemini api call. Updated after each following successful call by rewriting the file with the new values. |
 
-#### Container Components 
+#### Container Components
 
 **Directory: /src/components/pages**
 
-
+| File | Purpose |
+| ---- | ------- |
+| GrammarPage.jsx | Fetches data from GET request (grammar section, data from json if already fetched) |
+| VocabularyPage.jsx | Fetches data from GET (vocabulary form, vocabulary from json file if already fetched) and POST request (vocabulary flashcards and learn section) |
+| WritingPage.jsx | Fetches data from GET (instruction, whole feedback from json file if already fetched) and POST request communication (user writing submission and whole feedback) |
 
 **Directory: /src/components/common**
 
+| File | Purpose |
+| ---- | ------- |
+| DataGate.jsx | Gatekeeper and error handler |
+
 #### Presentational Components
 
-Directory: /src/components/layout
-Directory: /src/components/vocabulary
-Directory: /src/components/grammar
-Directory: /src/components/writing
+**Directory: /src/components/layout**
+
+| File | Purpose |
+| ---- | ------- |
+| Layout.jsx | Page structure with header, body and footer |
+| Navbar.jsx | Page routing and locking logic |
+| Section.jsx | Accordeon structure used in vocabulary page for learning and practice sections |
+
+**Directory: /src/components/vocabulary**
+
+| File | Purpose |
+| ---- | ------- |
+| AskVocabulary.jsx | Form to submit POST request and fetch the vocabulary list |
+| LearnVocabulary.jsx | Practice vocabulary section |
+| LearnVocabularyItem.jsx | Item structure, checking and navigation logic |
+| Vocabulary.jsx | Fetched vocabulary list of flashcards |
+
+**Directory: /src/components/grammar**
+
+| File | Purpose |
+| ---- | ------- |
+| GrammarView.jsx | Layout of the grammar data fetched from the server |
+
+**Directory: /src/components/writing**
+
+| File | Purpose |
+| ---- | ------- |
+| Writing.jsx | Parent of WritingExcercise and WritingFeedback |
+| WritingExercise.jsx | Instruction and form with text area for the user to submit his response for evaluation |
+| WritingFeedback.jsx | Feedback structure with original user writing, corrected version thereof, mistakes made and conclusion included |
 
 #### Styling
+
+| File | Purpose |
+| ---- | ------- |
+| index.css | CSS variables, body styling and webkit |
+| App.css | Consolidated app styling, beginning with layout, 3 exercises (v,g,w), and error handlers |
+
+_Note on styling_: The styling was generated 100% by Gemini. I have asked for every section to be identical if possible with GPT dark mode version.
 
 ## 7. 🙏 Acknowledgments
 Special thanks for everyone involved in making of _CS50: Harvard Introduction to Computer Science course_ for an amazing opportunity to learn the CS fundamentals. To my roommates for giving their feedback on the lanugage content and app design. Finally to Phil, Rohan, and Akash for showing me what Giga Chads software developers can be!
