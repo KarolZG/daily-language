@@ -141,6 +141,11 @@ App uses React initialized using Vite for Frontend and Python Flask for backend.
 | index.css | CSS variables, body styling and webkit |
 | App.css | Consolidated app styling, beginning with layout, 3 exercises (v,g,w), and error handlers |
 
+**Directory: /src/utils/**
+| File | Purpose |
+| ---- | ------- |
+| textFormatter.jsx | Replaces the HTML <correction> tags returned by Gemini with bold green text |
+
 _Note on styling_: The styling was generated 100% by Gemini. I have asked for every section to be identical if possible with GPT dark mode version.
 
 ## 7. 🙏 Acknowledgments
