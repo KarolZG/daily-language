@@ -83,6 +83,8 @@ App uses React initialized using Vite for Frontend and Python Flask for backend.
 | previous_grammar_topics.json | Stores all grammar topics titles discussed so far. Created upon the first successful `/api/grammar` call. Updated after each following successful call by appending the new topics. |
 | daily_writing.json | Stores the writing exercise instruction, user_writing, corrected_version, mistakes, and feedback. Created upon the first successful `/api/grammar` call and populated with the instruction. Updated with user_writing upon submission. Updated with corrected_version, mistakes, and feedback upon successful gemini api call. Updated after each following successful call by rewriting the file with the new values. |
 
+### Frontend
+
 #### Container Components
 
 **Directory: /src/components/pages**
