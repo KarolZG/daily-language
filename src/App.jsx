@@ -9,7 +9,7 @@ import GrammarPage from './components/pages/GrammarPage';
 import WritingPage from './components/pages/WritingPage';
 
 // Note on AI usage: AI was used for styling and classes assignment, troubleshooting
-// And helping me with restructuring the project so it would better fit the React framework
+// and helping me with restructuring the project so it would better fit the React framework
 
 function App() {
   const [writing, setWriting] = useState("");

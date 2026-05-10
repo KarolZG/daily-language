@@ -2,6 +2,8 @@
 
 **The Web App built to help you to excel at the language of your choice. It consists of 3 exercises that you can and should practice daily.**
 
+## 🎬 Video Demo: [YouTube](https://www.youtube.com/watch?v=BJOMMmGI8ZA "Daily Language Demo")
+
 ## 📋 Prerequisites
 To run this app you need:
 * Node Package Manager (npm)
